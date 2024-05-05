@@ -1,0 +1,77 @@
+.tab,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 35%;
+    width: 30%;
+}
+.tab th{
+    background-color: aqua;
+}
+.olcol{
+    margin-left: 45%;
+}
+.olcol li:nth-child(even){
+    color:chartreuse;
+}
+.ulcol{
+    margin-left: 45%;
+}
+.fourthtask{
+    border-collapse: collapse;
+    width: 40%;
+    margin-left: 30%;
+    
+}
+.fourthtask th{
+    background-color: aquamarine;
+}
+.fourthtask tr:nth-child(even){
+    background-color: bisque;
+}
+.fifthtask{
+    margin-left: 45%;
+}
+.sixthtask{
+    margin-left: 45%;
+}
+.seventhtask{
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: 25%;
+}
+.seventhtask th{
+    background-color: burlywood;
+}
+.eigthtask{
+    margin-left: 45%;
+}
+.eigthtask li:nth-child(3){
+    font-size:x-large;
+}
+.eigthtask li:nth-child(6){
+    font-size: x-large;
+}
+.eigthtask li:nth-child(9){
+    font-size: x-large;
+}
+.ninthtask{
+    margin-left: 45%;
+}
+.ninthtask li:nth-child(1){
+    font-style: italic;
+}
+.ninthtask li:nth-child(2){
+    font-style:oblique;
+}
+.ninthtask li:nth-child(3){
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.ninthtask li:nth-child(4){
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.ninthtask li:nth-child(5){
+    font-family: fantasy;
+}
