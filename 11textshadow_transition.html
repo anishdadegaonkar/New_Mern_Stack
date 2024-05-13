@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        overflow: hidden;
+        background-color: lightblue;
+        display: flex;
+        justify-content:space-between;
+        height: 310px;
+    }
+    .sun1{
+        border: 1px solid black;
+        background-color: yellow;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        animation: 1s linear 0s infinite alternate s;
+    }
+    .sun2{
+        border: 1px solid black;
+        background-color: orange;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        animation: 1s ease 0s infinite alternate a;
+    }
+    .sun3{
+        border: 1px solid black;
+        background-color: pink;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        animation: 1s ease-in 0s infinite alternate c;
+    }
+    .sun4{
+        border: 1px solid black;
+        background-color: blue;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        animation: 1s ease-out 0s infinite alternate v;
+    }
+    .sun5{
+        border: 1px solid black;
+        background-color: blue;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        animation: 1s ease-in-out 0s infinite alternate n;
+    }
+    @keyframes s {
+        from{
+            transform:translate(100px,210px);
+            background-color: red;
+        }
+        to{
+            transform: translate(0 ,0);
+        }
+    }
+    @keyframes a {
+        from{
+            transform:translateY(210px);
+        }
+        to{
+            transform: translateY(0);
+        }
+    }
+    @keyframes c {
+        from{
+            transform:translateY(210px);
+        }
+        to{
+            transform: translateY(0);
+        }
+    }
+    @keyframes v {
+        from{
+            transform:translateY(210px);
+        }
+        to{
+            transform: translateY(0);
+        }
+    }
+    @keyframes n {
+        from{
+            transform:translateY(210px);
+        }
+        to{
+            transform: translateY(0);
+        }
+    }
+    .trans{
+        margin: 50px;
+        width: 200px;
+        height: 100px;
+        background-color: aquamarine;
+        transition: width 1s,height 1s, font-size 1s, transform 1s ease-in-out ;
+    }
+    .trans:hover{
+        width: 400px;
+        height: 200px;
+        font-size: 70px;
+        transform: translatex(200px);
+    }
+</style>
+<body>
+<div class="main">
+    <div class="sun1"></div>
+    <div class="sun2"></div>
+    <div class="sun3"></div>
+    <div class="sun4"></div>
+    <div class="sun5"></div>
+</div>
+<div class="trans">
+    <h4>Hello</h4>
+</div>
+</body>
+</html>
