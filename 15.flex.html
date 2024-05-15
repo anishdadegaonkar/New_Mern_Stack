@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{    
+            display: flex;
+            align-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+        }
+        .flexi{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            background-color: cadetblue;
+            flex-direction: column-reverse;
+        }
+        .contwo{
+            display: flex;
+            margin: 10px;
+            background-color: black;
+            height: 100px;
+        }
+        p{
+            color: whitesmoke;
+        }
+        .i{
+            
+            margin-top: 17px;
+            margin-left: 0px;
+            width: 150px;
+            height: 60px;
+            background-color: blueviolet;
+        }
+        .conthree{
+            display: flex;
+            background-color: black;
+            margin: 10px;
+            padding: 10px;
+        }
+        .i2{
+            background-color: blueviolet;
+            color: whitesmoke;
+        }
+        .confour{
+            display: flex;
+            background-color: black;
+            margin: 10px;
+            padding: 10px;
+        }
+        .i3{
+            background-color: blueviolet;
+
+        }
+        .confive{
+            display: flex;
+            background-color: black;
+            margin: 10px;
+            padding: 10px;
+        }
+        .i4{
+            background-color: blueviolet;
+        }
+        .i4 p{
+            text-align: center;
+        }
+        .consix{
+            display: flex;
+            background-color: black;
+            margin: 10px;
+            padding: 10px;
+        }
+        .i5{
+            background-color: blueviolet;
+            width: 70px;
+        }
+        .conseven{
+            display: flex;
+            background-color: black;
+            margin: 10px;
+            padding: 10px;
+        }
+        .i6{
+            width: 100px;
+            background-color: blueviolet;
+        }
+        .coneight{
+            background-color: burlywood;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            
+        }
+        .box{
+            transition: 0.5s ease-in-out;
+        }
+        .box img{
+            margin: 10px 0px 0px 30px;
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            
+        }
+        .box:hover{
+            transform: scale(1.3);
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <div class="container">
+        <div class="flexi">Item 1</div>
+        <div class="flexi">Item 2</div>
+        <div class="flexi">Item 3</div>
+    </div>
+    </section>
+    <section>
+        <div class="contwo">
+            <div class="i" style="flex-grow: 0;"> <p>Child</p></div>
+            <div class="i" style="flex-grow: 0;"> <p>This is some longer content</p></div>
+            <div class="i" style="flex-grow: 0;"> <p>Child</p></div>
+        </div>
+    </section>
+     <section>
+        <div class="conthree">
+            <div class="i2" style="flex-grow: 1;"> <p>Child</p></div>
+            <div class="i2" style="flex-grow: 1;"> <p>Child</p></div>
+            <div class="i2" style="flex-grow: 1;"> <p>Child</p></div>
+        </div>
+    </section>
+    <section>
+        <div class="confour">
+            <div class="i3" style="flex-grow: 1;"> <p>Child</p></div>
+            <div class="i3" style="flex-grow: 1;"> <p>Child</p></div>
+            <div class="i3" style="flex-grow: 2;background-color: green;"> <p>Child</p></div>
+        </div>
+    </section>
+    <section>
+        <div class="confive">
+            <div class="i4" style="flex-grow: 0;"> <p>Child</p></div>
+            <div class="i4" style="flex-grow: 1;"> <p>Now this is a lot of content that goes here and to be honest we should be varry of changes </p></div>
+            <div class="i4" style="flex-grow: 0;background-color: green;"> <p>Child</p></div>
+        </div>
+    </section>
+    <section>
+        <div class="consix">
+            <div class="i5" style="flex-grow: 0;"> <p>Child</p></div>
+            <div class="i5" style="flex-grow: 0;"> <p>Child</p></div>
+            <div class="i5" style="flex-grow: 0;"> <p>Child</p></div>
+        </div>
+    </section>
+    <section>
+        <div class="conseven">
+            <div class="i6" style="flex-grow: 0;"> <p>Child</p></div>
+            <div class="i6" style="flex-grow: 0;"> <p>Child</p></div>
+            <div class="i6" style="flex-grow: 2;background-color: orange;"> <p>Child</p></div>
+        </div>
+    </section>
+    <section>
+        <div class="connine">
+            <div class="i7" style="flex-grow: 1;"> <p>Child</p></div>
+            <div class="i7" style="flex-grow: 1;"> <p>Child</p></div>
+            <div class="i7" style="flex-grow: 1;"> <p>Child</p></div>
+        </div>
+    </section>
+    <section class="coneight">
+        <div class="box"><img src="./assignments/img/Bike3.jpg" alt=""></div>
+        <div class="box"><img src="./assignments/img/Bike6.jpg" alt=""></div>
+        <div class="box"><img src="./assignments/img/Bike1.jpg" alt=""></div>
+        <div class="box"><img src="./assignments/img/Bike5.jpg" alt=""></div>
+        <div class="box"><img src="./assignments/img/Bike2.jpg" alt=""></div>
+        <div class="box"><img src="./assignments/img/Bike4.jpg" alt=""></div>
+        <div class="box"><img src="./assignments/img/Bike5.jpg" alt=""></div>
+        <div class="box"><img src="./assignments/img/Bike3.jpg" alt=""></div>
+        <div class="box"><img src="./assignments/img/Bike2.jpg" alt=""></div>
+        <div class="box"><img src="./assignments/img/Bike1.jpg" alt=""></div>
+    </section>
+</body>
+</html>
